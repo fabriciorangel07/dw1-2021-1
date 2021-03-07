@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+    <style>
+        address {
+            /* Fazendo elemento ficar em linha */
+            display: inline;
+            font-style: normal; /* essa fonte tira o italico (deixa a fonte padrao)*/
+            text-decoration: underline;
+            /* comando acima, é para sublinhar o texto requerente */
+        }
+        strong {
+            color: red;
+        }
+        /* o HTML é o que vai aparecer
+            o CSS é como vai aparecer */
+        mark {
+            background-color: aqua;
+            /* background é para adicionar uma cor no fundo da tag que selecionou. */
+        }
+        /* CSS só altera as TAGs ou Blocos que selecionou */
+    </style>
+</head>
+<body>
+    <h1>Fomatação de texto</h1>
+    <!--
+        Tag <u> = underline (sublinhado) (NÃO USAR)
+            não é recomendado, para deixar seu site em conformidade (boa indexação).
+    -->
+    <!--
+        Tag <address> = endereço (Destacar endereços seja fisico ou virtual)
+    -->
+    <p>Orkutilson morava na <address>Rua sobe e Desce, 333</address>
+        e seu e-mail era <address>orkutilson@gmail.com</address>.
+    </p>
+    <p>
+        <!--
+            <i> = italico (visual apenas), só embelezamento.
+            <b> = negrito (Visual apenas)
+        -->
+        Ele estudava em uma <b>escola estadual</b> se sua matéria preferida era <i>Matemática.</i>
+        <!--
+            <strong> = texto mais importante (forte, em ingles) (SEMANTICA)
+            <em> = ênfase (emphasis) (SEMANTICA)
+        -->
+    </p>
+    <p>
+        Ele estudava em uma <strong>escola estadual</strong> se sua matéria preferida era <em>Matemática.</em>
+    </p>
+    <p>
+        Ele gosta de usar <mark>caneta marca texto</mark> para destacar os trechos mais importantes do seu caderno.
+    </p>
+    <p>
+        Sua professora achava que ele era <strike>meio burro</strike> não era muito inteligente, já que sempre tinha dificuldade nas provas.
+        <!--
+            <strike> = traço atraves do texto (tachado) (pouco usado)
+        -->
+        </p>
+        <p>
+            Sua professora achava que ela era <del>meio burro</del> não era muito inteligente, já que sempre tinha dificuldade nas provas.
+            <!--
+                <del> = texto apagado (é mais SEMANTICO = ideal)
+            -->
+        </p>
+        <p>
+            Depois que fez a recuperação, sua nota foi de 6,7. <ins> O suficiente para sua aprovação.</ins>
+            <!--
+                <ins> = texto inserido (é mais SEMANTICO, ideal)
+            -->
+        </p>
+        <p>
+            Orkutilson também gostava de formulas. Suas preferidas eram
+            H<sub>2</sub>O e E = mc <sup>2</sup>.
+            <!--
+                <sub> = Texto SUBscrito (desçe o caractere)
+                <sup> = texto sobrescrito (levanta o caractere) (SUPerscrit)
+            -->
+        </p>
+</body>
+</html>
