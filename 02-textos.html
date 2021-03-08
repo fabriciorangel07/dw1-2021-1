@@ -22,6 +22,16 @@
             /* background é para adicionar uma cor no fundo da tag que selecionou. */
         }
         /* CSS só altera as TAGs ou Blocos que selecionou */
+        h1{
+            /* Valores para text-align: left, right, center, justify */
+            text-align: center;
+        }
+        p.dir {
+             /* <p class="">  usar a class quando a mais de uma divisão igual ou paragrafos no mesmo bloco */
+            text-align: right;
+        }
+
+
     </style>
 </head>
 <body>
@@ -33,6 +43,8 @@
     <!--
         Tag <address> = endereço (Destacar endereços seja fisico ou virtual)
     -->
+    <p class="dir">Historias baseadas em fatos reais.</p>
+
     <p>Orkutilson morava na <address>Rua sobe e Desce, 333</address>
         e seu e-mail era <address>orkutilson@gmail.com</address>.
     </p>
@@ -79,5 +91,30 @@
                 <sup> = texto sobrescrito (levanta o caractere) (SUPerscrit)
             -->
         </p>
+        <!--
+            <quote> = citações no meio de um paragrafo (para dar destaque, ter uma SEMANTICA no site)
+            <blockquote> = um bloco de citação (com varias linhas, por exemplo.)
+        -->
+        <p>
+            Sua frase favorita era <quote>"Penso, logo existo" (Descartes)</quote> e seu trecho de musica preferido era:
+        </p>
+        <blockquote>
+            Há tanto mundos diferentes<br>
+            Tantos sóis diferentes.<br>
+            E nós temos um mundo,<br>
+            Mas vivemos em mundos diferentes.<br>
+            (Dire Straits, Brothers in Arms)
+        </blockquote>
+        <!--
+            <abbr> = Definiçao de abrevião (faz aparecer um texto sobre a palavra destacada).
+            <code> = representa código de programação ou marcação. No caso de HTML, os sinais < e > precisam ser substituidos por &lt; e &gt;, respectivamente.
+        -->
+        <p>
+            Em suas horas vagas, Orkutilson era um membro ativo da <Abbr title="Associação Comercial do Bairro do Limão">ASMOBALI</Abbr> e estudava <abbr title="HyperText Markup Language"> HTML</abbr>. Suas tags favoritas eram <code>&lt;blockquote&gt;</code> e <code>&lt;address&gt;</code>
+        </p>
+        <p class="dir">
+            <em>Autor: Desconhecido</em>
+        </p>
+
 </body>
 </html>
