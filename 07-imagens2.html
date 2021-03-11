@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+    <style>
+        /* Regras iniciadas com # se aplicam ao elemento com o id de mesmo nome. */
+        #logo {
+            width: 100%; /* A Imagem ocupará 100% da largura disponivel */
+            max-width: 360px; /* esse comando, voce restringe a largura maxima em pixels da img */
+        }
+        #logo1 {
+            max-width: 700px;
+        }
+        figcaption{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 12px;
+        }
+        figure{
+            background-image: url(img1/metal.jpg);
+        }
+        body{
+            /* tag abaixo é para por a imagem de fundo da pagina */
+            /* Por padrão, a imagem se repete  automaticamente para cobrir todo fundo da pagina. */
+            background-image: url('img1/light-carbonfiber.png');
+            /* a tag abaixo, serve para parar o repetimento da imagem 
+            background-repeat: no-repeat; */
+        }
+
+    </style>
+
+</head>
+<body>
+    <!--
+        Atributos da tag <img> (imagem)
+        src (source) -> o caminho para o arquivo de imagem será exibido alt (texto alternativo) -> Um texto que será exibido no lugar da imagem caso o respectivo arquivo não seja encontrado.
+    -->
+    <!-- <figure>: para quando as imagens precisam da legenda-->
+    <figure>
+         <img id="logo" src="img1/apptiva-logo.png" alt="Logotipo da empresa apptiva-logo">
+        <img id="logo1" src="img1/distance-education-ORIGINAL.jpg" alt="Educação a distancia" title="Venha estudar conosco">
+        <!-- Legenda da imagem (semântico). Pode vir antes ou depois do <img>. A frase vai aparecer embaixo da iimagem. -->
+        <figcaption>
+        A Apptive oferece as melhores tecnologias para a Educação a distância. Faça como nossa Aluna!
+        </figcaption>
+
+    </figure>
+
+        <!-- Regras do CSS também podem ser atribuidas a um elemento por meio do atribudo style -->
+        
+    <img style="width: 50%; border: 1px solid blue" src="img1/svg-logo.svg" alt="Logotipo do formato em SVG">
+
+</body>
+</html>
