@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Links (Hyperlinks ou hiperligações)</title>
+    <link rel="stylesheet" href="08.css">
 </head>
 <body>
 
@@ -36,8 +37,76 @@
         Links são acessados em HTML pela tag <a> (anchor, âncora). O parametro href indica o destino do link.
         Sempre que o destino linkado não pertencer ao nosso site, o URL precisa iniciar com o protocolo  (http:// ou https://).
     -->
-
+    <!--
+        O elemento <a> também é um elemento de linha (fica na mesma linha)
+    -->
+    <!--
+        Link externo: leva para uma página em outro site.
+        Precis comecar com http:// ou https:// (endereço completo)
+    -->
+    <div>
     <a href="https://site.fatecfranca.edu.br">Site oficial da Fatec Franca</a>
+    </div>
+    <!--
+        Link intern: leva para uma pagina do proprio site não precisa comecar com o prefixo do protocolo (http://)
+    -->
+    <p>
+        Para maiores informações sobre o uso de imagens em HTML, consulte <a href="07-imagens2.html">Imagens 2</a>. Está tudo explicado lá.
+    </p>
+
+    <!--
+        Link externo que abre em uma nova janela.
+        Para isso, usamos o atributo  target com o valor "_blank"
+    -->
+    <div>
+    <a href="https://www.cps.sp.gov.br" target="_blank">Site do Centro Paula Souza</a>
+    </div>
+
+    <!--
+        Link de imagem (o link pode ser externo ou interno)
+        O "recheio" da tag <a>, em vez de ser um texto, é uma tag <img>
+    -->
+
+    <div>
+        <a href="07-imagens2.html" title="Pagina principal do site da Apptiva">
+            <img src="img1/apptiva-icon.png" alt="Site da apptiva">
+    </div>
+
+    <div>
+        <a href="03-listas.html">Listas em HTML</a> 
+    </div>
     
+    <br>
+    <!--
+        Atributo rel -> estabele RELAÇÃO entre a pagina atual e a pagina a ser linkada.
+        Valores possiveis:
+        nofollow -> O autor da pagina não endossa (não concorda, necessariamente) com o conteudo de destino prev -> Link para a pagina anterior do mesmo site.
+        prev -> Link para voltar ao site anterior.
+        next -> Link para avancar pra proxima pagina.
+        external -> abrir uma pagina externa ou em outra aba.
+        author -> Link para o site pessoal do autor da pagina.
+    -->
+
+    <div>
+        <a href="https://produto.mercadolivre.com.br/MLB-1459346254-livro-html-e-css-projete-e-construa-websites-alta-books-_JM#position=2&type=item&tracking_id=efd55f3e-6c17-4ad7-b798-c5fcb82c0f23" rel="nofollow" Livro de HTML></a>
+    </div>
+
+    <br>
+
+    <a href="07-imagens2.html" rel="prev">Pagina anterior</a>
+
+    <br>
+
+    <a href="09-nao-existe.html" rel="next">Pagina seguinte</a>
+
+    <br>
+
+    <a href="http://www.pudim.com.br" rel="external">Site do pudim</a>
+
+    <br>
+
+    <a href=https://www.linkedin.com/in/fabricio-rangel-de-sousa
+" rel="author" target="_blank">Fale com o autor</a>
+
 </body>
 </html>

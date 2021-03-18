@@ -1,0 +1,24 @@
+/* Links em geral */
+/* tirando o sublinhado dos links colocando a tag "text_decoration" */
+a {
+    color: orange;
+    text-decoration: none;
+}
+
+/* Links já visitados */
+
+a:visited {
+    color: green;
+
+}
+
+/* Link enquanto o mouse tiver encima (sobre o link) */
+
+a:hover {
+    /* color: orange; */
+    filter: brightness(150%); /* Dando mais brilho a cor */
+    text-decoration: underline; /* volta o subilnhado do link, quando o mouse passa pelo link. */
+}
+
+/* tirando o sublinhado dos links */
+
