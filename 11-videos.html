@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos em HTML</title>
+</head>
+<body>
+    
+    <h1>Vídeos em HTML</h1>
+    
+    <h2>Exemplo de video com multiplas fontes</h2>
+
+    <!--
+        Parametros da tag <video>
+            - width: largura do video
+            -poster: A imagem que aparecerá no lugar do video antes da reprodução.
+    -->
+        <!-- Opções de tag <video>
+        controls -> mostra os controles do player
+        autoplay -> ao carregar a pagina, já inicia a reprodução.
+        loop -> reproduz em sequencia, repetindo o mesmo audio.
+        preload -> Precarrega algumas informações. Valores possiveis: * metadata: carrega só as informações sobre o arquivo, como sua duração.
+        * none: não carrega nada antecipadamente.
+        * auto (padrão): carrega o audio inteiro, mesmo que o usário nunca dê o play.
+    -->
+
+    <video controls width="400px" poster="video/reduzir-pdf-thumb.png">
+        <source src="video/reduzir-pdf.mp4" type="video/mp4">
+        <source src="video/reduzir-pdf.ogv" type="video/ogg">
+        <source src="video/reduzir-pdf.webm" type="video/webm">
+
+            <p>
+                Não foi possivel realizar o download do video. Faça o <a href="videos/reduzir-pdf.mp4" download="reduzir-pdf.mp4" type="videos/mp4">download</a> do arquivo. 
+            </p>
+    </video>
+
+</body>
+</html>
