@@ -8,8 +8,42 @@
 <body>
     
     <h1>Vídeos em HTML</h1>
-    
-    <h2>Exemplo de video com multiplas fontes</h2>
+
+    <h2>Formatos de videos</h2>
+
+    <p>
+        Para entender os formatos de vídeo, é preciso entender primeiro o que são os <em>codecs</em> (codificadores/decodificadores). Trata-se de algoritimos que codificam depois decodificam várias imagens em sequência para criar a ilusão de movimento. Alguns <em>codecs</em> de vídeo não lidam com a parte de som. Com isso, torna-se necessário acrescentar o áudio em uma parte separada, usando um dos formatos de áudio já estudados.
+    </p>
+
+    <p>
+        Para juntar as partes do video, audio e outras informações (como, por exemplo, as legendas) em um único formato <em>container</em>. Esses formatos podem parecer iguais por fora, enquanto, por dentro, trazem trilhas multimídia produzidas com <em>codescs</em> diferentes. Por isso, o equipamento que irá reproduzi-los precisa, além reconhecer o formato do arquivo <em>container</em>, ter também instalados os <em>codecs</em>, para decodificar áudio e vídeo. Os navegadores trazem instalados os <em>codecs</em> mais comuns.
+        </p>
+
+        <ul>
+            <li><strong>MP4</strong>: Formato introduzido em 2001 pela ISO <em>(International Standards Organization</em>, Organização Internacional de Padrões), em que se tornou o padrão de mercado. É um formato <em>container</em>, em que suporta vários <em>codecs</em> tanto de áudio como de vídeo, que usualmente estão sobre compressão.</li>
+
+            <li><strong>M4V</strong>: Formato introduzido pelo Apple, tecnicamente semelhante ao MP4. No entanto, esse formato suporta DRM <em>(Digital Rights Management</em>, Gerenciamento de Direito Digitais), permitindo que conteúdos protegidos por direitos autorais só possam ser reproduzidos por quem tiver adquirido a licença para tal.</li>
+
+            <li><strong>WEBM</strong>: Projeto irmão do WebP, iniciado pela fundação Xiph.org em 2010 e depois assumido pelo Google. É também um formato <em>container</em>, que promete melhor qualidade de compressão em um menor tamanho de arquivo comparado ao MP4.</li>
+
+            <li><strong>OGV</strong>: Formato <em>container</em> da familia OGG Vorbis, introduzido pela Fundação Xiph.org em 2004, de livre utilização.</li>
+
+            <li><strong>AVI</strong>: Sigla para <em>Audio Video Interleaved</em> <em>(Áudio e Vídeo Entrelaçados)</em>m introduzido pela microsoft em 1992. É um formato sem compressão, tendendo a gerar arquivos muitos grandes.
+            </li>
+
+        </ul>
+
+        <h2>Problemas com a hospedagem de vídeos</h2>
+
+        <p>
+            Hospedar vídeos em seu proprio <em>website</em> pode sair caro, pois várias hospedagens atualmente cobram por tráfego. Um tipico vídeo de 500mb de tamanho, por exemplo, ao ser reproduzido 20 vezes, terá consumido 10gb de tráfego (ou de banda, como se ouve com mais frequência).
+        </p>
+        
+        <p>
+            Portanto, na maioria das vezes, o melhor a fazer é hospedar seu vídeo em serviços como o youtube ou apenas incoporar ("linkar") o vídeo em seu <em>site</em>. Enquanto vídeos hospedados no youtube geralmente estarão disponiveis para um público amplo, enquanto o Vimeo, mediante a pagamento, permite restringir o acesso a vídeos.
+        </p>
+
+        <h2>Exemplo de video com multiplas fontes</h2>
 
     <!--
         Parametros da tag <video>
@@ -25,7 +59,7 @@
         * auto (padrão): carrega o audio inteiro, mesmo que o usário nunca dê o play.
     -->
 
-    <video controls width="400px" poster="video/reduzir-pdf-thumb.png">
+        <video controls width="400px" poster="video/reduzir-pdf-thumb.png">
         <source src="video/reduzir-pdf.mp4" type="video/mp4">
         <source src="video/reduzir-pdf.ogv" type="video/ogg">
         <source src="video/reduzir-pdf.webm" type="video/webm">
@@ -33,7 +67,18 @@
             <p>
                 Não foi possivel realizar o download do video. Faça o <a href="videos/reduzir-pdf.mp4" download="reduzir-pdf.mp4" type="videos/mp4">download</a> do arquivo. 
             </p>
-    </video>
+         </video>
 
-</body>
+         <h2>Exemplos de videos incorporados</h2>
+    
+         <p>Vídeo incorporado do youtube.</p>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/    f7JWDLFhR_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+         <p>Video Incorporado do VIMEO</p>
+
+        <iframe src="https://player.vimeo.com/video/40502291" width="640" height="424" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        <p><a href="https://vimeo.com/40502291">Rihanna</a> from <a href="https://vimeo.com/user9987879">The Rella Group</a> on <a href="https://vimeo.com">Vimeo</a>.</p>  
+    
+    </body>
 </html>
