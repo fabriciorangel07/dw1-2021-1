@@ -1,0 +1,28 @@
+div.container {
+    background-color: darkgrey;
+    font-family: Calibri, Arial, sans;
+    padding: 20px; /* espaçamento interno */
+    border-left: 7px dotted black;
+}
+
+/* divs internas */
+div.container div {
+    border: 1px solid red;
+    margin-bottom: 16px; /* espacamento interno da div */
+}
+
+#box1 {
+    background-color: goldenrod;
+    padding: 40px 30px;
+    /*quando somente insere o padding com dois valores, o primeiro vale para o top e o bottom e o segundo valor serve para os lados (right e left). */
+}
+
+#box2 {
+    background-color: lightskyblue;
+    padding: 30px 8px 25px 40px;
+}
+
+#box3 {
+    background-color: yellowgreen;
+    margin-bottom: -10px; /* diminuir ou anular a ultima borda. */
+}
