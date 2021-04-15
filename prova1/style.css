@@ -27,8 +27,6 @@ figcaption {
 ol[type="1"], ol:not([type]) {  /* Lista ordenada de primeiro nível */
     margin-left: 30%;       /* Margem esquerda */
     text-align: left;
-    color: black;
-    font-size: 16px;
 }
 ol[type="1"] > li, ol:not([type]) > li {
     font-weight: bold;  /* Coloca em negrito os itens da lista ordenada de primeiro nível */
@@ -45,9 +43,6 @@ video{
 }
 #fonte{
     text-align: right;
-}
-#paises{
-    text-align: center;
 }
 #asia{
     color: red;
