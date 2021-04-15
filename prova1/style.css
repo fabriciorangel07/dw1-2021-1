@@ -1,0 +1,66 @@
+* {
+    font-family: Calibri, Arial, sans-serif;    /* Fonte para todos os elementos */
+}
+body {
+    background-color: navy;    /* Cor de fundo */
+    font-size: 16px;              /* Tamanho da fonte */
+}
+#root {
+    font-size: 18px;                /* Tamanho da fonte */
+    border-radius: 16px;            /* Bordas arredondadas */
+    background-color: white;     /* Cor de fundo */
+    margin: 50px 20px 35px 35px;
+    padding: 20px;
+}
+h1, h2 {
+    color: navy;        /* Cor do texto */
+    font-size: 150%;
+}
+h1 {                                    
+    text-shadow: 2px 2px rgba(128, 128, 128, 0.4);    /* Sombra do texto */
+    font-size: 60px;
+    text-align: center;
+}
+figcaption {
+    font-style: italic;      /* Estilo da fonte */    
+}
+ol[type="1"], ol:not([type]) {  /* Lista ordenada de primeiro nível */
+    margin-left: 30%;       /* Margem esquerda */
+    text-align: left;
+    color: black;
+    font-size: 16px;
+}
+ol[type="1"] > li, ol:not([type]) > li {
+    font-weight: bold;  /* Coloca em negrito os itens da lista ordenada de primeiro nível */
+}
+iframe {                /* Elemento que contém o vídeo do Youtube */
+    display: block;     /* Exibição em bloco */
+    margin: 0 auto;     /* Centraliza horizontalmente */
+}
+figure{
+    text-align: center;
+}
+video{
+    text-align: center;
+}
+#fonte{
+    text-align: right;
+}
+#paises{
+    text-align: center;
+}
+#asia{
+    color: red;
+}
+#africa{
+    color: blue;
+}
+#americas {
+    color: lightcoral;
+}
+#europa {
+    color: brown;
+}
+#oceania {
+    color: lightseagreen;
+}
