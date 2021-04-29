@@ -1,0 +1,26 @@
+/* 
+    CSS Reset
+
+    * = reseta todos os elementos da pagina.
+
+*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    background-color: #550000;
+    padding: 10px 20px;
+}
+nav ul li {
+    display: inline-block; /* codigo para deixar a lista horizontal */
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    
+}
+nav {
+    background-color: #FF7F2A;
+    text-align: right;
+}
