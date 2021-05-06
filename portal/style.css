@@ -1,3 +1,6 @@
+/* @import - quando existem, devem ser o primeiro item de um arquivo CSS. */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 /* 
     CSS Reset
 
@@ -16,11 +19,10 @@ header {
 nav ul li {
     display: inline-block; /* codigo para deixar a lista horizontal */
     margin: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    
+    font-family: Raleway, Calibri, Arial, serif;
 }
 nav {
     background-color: #FF7F2A;
     text-align: right;
+    color: #FFFFFF;
 }
