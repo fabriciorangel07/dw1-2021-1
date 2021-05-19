@@ -170,7 +170,7 @@ footer {
     display: flex;
     flex-direction: row;
     /* Dá espaço automaticamente entre os itens de um flexbox */
-    align-content: space-around;
+    justify-content: space-around;
 }
 
 footer a {
@@ -182,5 +182,4 @@ footer ul li {
     display: inline-block;  /* Coloca os itens de uma lista na horizontal */
     padding: 0 12px;
     border-right: 1px solid #ffffff;
-    
 }
