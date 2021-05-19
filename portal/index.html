@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quebrada On line</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Quebrada On Line</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
 
 </head>
 <body>
@@ -31,7 +37,7 @@
     <div id="content">
         <!-- section -> agrupador de conteudos semelhantes -->
         <!-- Dentro de uma section, segundos as especificacoes, espera-se ter um titulo. -->
-        <section id="principal" >
+        <main> <!-- Divisão principal do site -->
             <h1>Notícias</h1>
 
             <article class="destaque"> <!-- artigos principais da pagina, um artigo ou noticia -->
@@ -62,20 +68,34 @@
                 <p>População revoltada contra o aumento de preços promovidos por Ademar do Bar</p>
             </article>
 
-        </section>
-        <section id="secundario">
-            <h1>Conteúdo relacionados</h1>
-            <aside> <!-- artigos segundarios da pagina. -->
+        </main>
+        <aside>
+            <article> <!-- artigos segundarios da pagina. -->
                 <img src="img/cha.png" alt="Foto de folhas" title="Foto: Sohail" />
                 <h1><a href="#">Mulher do verdureiro emagrece 30kg tomando chá e choca a quebrada. SAIBA MAIS </a></h1>
                 </a>
-            </aside>
-        </section>
+            </article>
+
+            <article>
+                <img src="img/relacionado02-320x240.jpg" alt="Homem bem sucedido" title="Foto: Andrea Piacquadio">
+                <h1><a href="#">Tenho uma oportunidade para você! NÃO É PIRÂMIDE</a></h1>
+            </article>
+
+        </aside>
     </div>
 
-    <footer> <!-- rodapé da pagina. -->
-        
-
+    <footer> <!-- Rodapé -->
+        <ul>
+            <li><a href="#">Quem somos</a></li>
+            <li><a href="#">Nossa missão</a></li>
+            <li><a href="#">Comercial</a></li>
+        </ul>
+        <address>
+            Rua do Sobe e Desce, 33<br>
+            Morro Alto de Cima/SP<br>
+            <a href="tel:+55166661111">(16) 6666-1111</a><br>
+            <a href="mailto:contato@qol.com.br">contato@qol.com.br</a>
+        </address>
     </footer>
 </body>
 </html>
