@@ -48,6 +48,33 @@ a:hover {   /* Mouse passando em cima do link */
 header {
     background-color: var(--cor-primaria);
     padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* espaco entre os icones */
+}
+
+#social {
+    background-color: var(--cor-primaria);
+    display: flex;
+}
+
+#social img {
+    width: 32px;
+}
+
+#social a {
+    color: var(--cor-texto-claro);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+#social a span {
+    margin-left: 6px;
+    display: none;
+}
+
+#social a:hover span {
+    display: inline; /*mostra novamente o texto, ao passar o mouse */
 }
 
 nav ul li {
@@ -59,6 +86,27 @@ nav {
     background-color: var(--cor-secundaria);  /* Cor do fundo */
     color: var(--cor-texto-claro);             /* Cor do texto */
 }
+
+#menu {
+    padding: 0 20px;
+}
+
+#menu li {
+    margin: 10px 0px;
+}
+
+#menu a {
+    color: var(--cor-texto-claro);
+    height: 100%;
+    padding: 10px 20px;
+    transition: 300ms;
+    background-color: var(--cor-secundaria);
+}
+
+#menu a:hover {
+    filter: brightness(0.8); /* diminui o brilho em 20%, deixando mais escuro */
+    text-decoration: none;
+} 
 
 #content {
     background-color: var(--cor-fundo-clara);
@@ -181,5 +229,16 @@ footer a {
 footer ul li {
     display: inline-block;  /* Coloca os itens de uma lista na horizontal */
     padding: 0 12px;
-    border-right: 1px solid #ffffff;
+    border-right: 2px solid #ffffff;
 }
+
+/* Tirar a borda direita do ultimo li */
+
+footer ul li:last-child {
+    border-right: none;
+}
+
+footer img {
+    width: 200px;
+    height: 100%;
+}   
