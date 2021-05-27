@@ -107,7 +107,45 @@ nav {
 #menu a:hover {
     filter: brightness(0.8); /* diminui o brilho em 20%, deixando mais escuro */
     text-decoration: none;
-} 
+}
+
+#menu-contraido {
+    margin: 24px;
+    display: inline-block;
+    /*width: 32px;
+    height: 32px; */
+    border: 1px solid red;
+    position: relative
+}
+
+#menu-contraido input, #menu-contraido span {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#menu-contraido input {
+    z-index: 100; /*traz o input para cima */
+}
+
+
+#menu-contraido span {
+    display: block;
+    background-color: var(--cor-primaria);
+    border-radius: 4px;
+    border: 2px solid var(--cor-fundo-clara);
+    background-image: url('img/menu-icon-48x48.png');
+    background-size: 38px 38px;
+    background-position: center center;
+    cursor: pointer; /* cursor de maozinha */
+}
+
+/* Seletor ' ~ ' seleciona o proximo elemento (irmao) */
+#menu-contraido input:checked ~ span {
+    background-image: url('img/close-icon-48x48.png')
+}
 
 #content {
     background-color: var(--cor-fundo-clara);
@@ -189,12 +227,12 @@ article > h2 {
     width: 450px;
     margin-right: 24px;
     border-radius: 4px;
-    max-width: 100%; /* largura maxima limitada a largura do pai (destaque no caso).
+    max-width: 100%; /* largura maxima limitada a largura do pai (destaque no caso). */
 }
 
 .foto-texto {
     display: flex;
-    flex-direction: row; /* Os filhos ficarão em linha */
+    flex-direction: row; /* Os filhos ficarão em linha
 } 
 
 aside > article > img {
