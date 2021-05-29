@@ -9,7 +9,7 @@
     --cor-fundo-clara: #DDDDDD;
     --cor-fundo-escura: #BBBBBB;
     --cor-texto-claro: #FFFFFF;
-    --cor-texto-escura: #777777;
+    --cor-texto-escura: #444444;
 }
 
 /* CSS reset */
@@ -225,7 +225,7 @@ article > h2 {
     font-size: 1rem;
 }
 
-.destaque img {
+.foto-texto img {
     width: 450px;
     margin-right: 24px;
     border-radius: 4px;
@@ -236,6 +236,33 @@ article > h2 {
 .foto-texto {
     display: flex;
     flex-direction: row; /* Os filhos ficarão em linha, na horizontal */
+}
+
+.individual h1 {
+    color: var(--cor-primaria);
+    font-size: 2.5rem;
+    margin: 12px 0;
+}
+
+.individual p {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.individual .foto-texto {
+    flex-direction: column;
+}
+
+.individual .foto-texto img {
+    /* Centraliza a imagem horizontalmente */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.individual .foto-texto p {
+    margin: 12px 0 36px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 aside > article > img {
@@ -308,18 +335,18 @@ footer img {
 @media screen and (max-width: 800px) {
     #menu {
         min-height: 88px;
+        padding: 0;
     }
     #menu ul {
         margin-top: 50px;
-        margin-left: -18px;
     }
     #menu ul li {   /* Menu vertical */
         display: block;
-        margin: 0;
-        padding: 12px 0;
+        margin: 6px 0;
     }
     #menu a {
-        width: 100%;    
+        width: 100%;
+        display: block;
     }
     #menu-contraido {
         margin-top: 24px;
@@ -331,6 +358,7 @@ footer img {
     /* Mostra o botão do menu */
     #menu-contraido input, #menu-contraido span {
         display: block;
+        left: 20px;
     }
     #menu-contraido input:checked ~ ul {
         display: block;
@@ -372,4 +400,15 @@ footer img {
     /*
         A FAZER: colocar o logo principal e os ícones de redes sociais em coluna
     */
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    header img {
+        max-width: 100%;
+    }
+    .destaque > h1 > a, .individual h1 {
+        font-size: 2rem;
+    }
+    
 }
